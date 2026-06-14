@@ -3,6 +3,7 @@ author: Fadullo
 description: Currently doing a BSc Major in Physics combined with a D.Met (Diploma in Meteorology) and a Minor in Math at Dalhousie University. Interested in weather, computing, Vim.
 avatar: "./assets/images/lecture.jpg"
 url: "https://fadullo.github.io"
+baseurl: "/blog"
 
 exclude:
   - archive
