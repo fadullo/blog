@@ -3,18 +3,15 @@ layout: page
 title: Writing
 toc: true
 ---
-
 ## Introduction
 On this blog, are many article sized bits of writing that were eventually incorportated into 
 “bookish” compilations. Currently I have been working on documents regarding my most recent courses.
 Though, I plan to expand my horizons towards my first-year courses.
-
 My math and physics notes are somewhat selfish. Written for myself to improve my understanding, and represents as a running log of my personal learning progress. Feel free to email me if you find any post confusing, helpful, spot an error, or have something to say.
 
-(NOTE: There aren't any released documents yet, they will be released during the summer)
+I plan to release these documents by the fall semester for anyone to use.
 
 ## Courses
-
 ### Mathematical Modelling
 
 This class focused mostly on using mathematical knowledge to complete computations and simulations in python.
