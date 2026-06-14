@@ -1,22 +1,20 @@
-<div class="sidebar">
-     <img class="avatar-img" src="{{ site.avatar | relative_url }}">
-     <strong><p>{{ site.author }}</p></strong>
-     <p>{{ site.description }}</p>
+<aside class="side">
+  <img class="avatar" src="{{ site.avatar | relative_url }}" alt="{{ site.author | escape }}">
+  <p><strong>{{ site.author }}</strong></p>
+  <p>{{ site.description }}</p>
 
+  <strong>Socials</strong>
+  <ul class="links">
+    {%- for link in site.social_links -%}
+      <li>
+        <a href="{{ link.user_url }}">
+          <i class="fa-brands fa-{{ link.platform | lowercase }}" aria-hidden="true"></i>
+          {{ link.platform | capitalize }}
+        </a>
+      </li>
+    {%- endfor -%}
+  </ul>
 
-     <strong>Socials</strong>
-     <ul class="socials">
-          {%- for link in site.social_links -%}
-          <li class=social-list>
-               <a href="{{ link.user_url }}">
-               <i class="fa-brands fa-{{ link.platform | lowercase }}"></i>
-               {{ link.platform | capitalize }}
-          </a>
-          {%- endfor -%}
-     </ul>
-
-     <hr>
-     {%- include header.html -%}
-</div>
-
-
+  <hr>
+  {%- include header.html -%}
+</aside>

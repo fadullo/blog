@@ -2,18 +2,18 @@
   margin: 20px 0;
   border: 1px solid #e1e1e1;
   border-radius: 4px;
-  background-color: #fdfdfd;
+  background: #fdfdfd;
   overflow: hidden;
 }
 
 .highlight::before {
   content: "</>";
   display: block;
-  background-color: #f5f5f5;
   padding: 8px 15px;
+  background: #f5f5f5;
   border-bottom: 1px solid #e1e1e1;
-  font-family: monospace;
   color: #666;
+  font-family: monospace;
   font-size: 0.9em;
 }
 
@@ -21,7 +21,7 @@
   margin: 0;
   padding: 20px;
   overflow-x: auto;
-  background-color: transparent;
+  background: transparent;
   font-size: 14px;
   line-height: 1.5;
 }

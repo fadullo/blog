@@ -1,5 +1,5 @@
 ---
-layout: writing
+layout: page
 title: Writing
 toc: true
 ---

@@ -1,5 +1,9 @@
-.site-nav .trigger {
+.nav {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 14px;
 }
 
+.nav a {
+  font-weight: 700;
+}

@@ -1,18 +1,17 @@
 ---
 layout: base
 ---
-<div class="page-layout">
-    <div class="toc-container">
-         <strong>Table of contents</strong>
-         <div id="toc-content">
-              {% include toc.html html=content %}
-         </div>
-    </div>
 
-    <div class="page">
-         <a href="{{ "/" | relative_url }}">&larr; {{ "Back" }}</a>
-        {{ content }}
-    </div>
+<div class="page-wrap{% unless page.toc %} no-toc{% endunless %}">
+  {% if page.toc %}
+    <nav class="toc" aria-label="Table of contents">
+      <strong>Contents</strong>
+      {% include toc.html html=content h_min=2 h_max=3 %}
+    </nav>
+  {% endif %}
+
+  <article class="page">
+    <a class="back" href="{{ "/" | relative_url }}">Back</a>
+    {{ content }}
+  </article>
 </div>
-
-
