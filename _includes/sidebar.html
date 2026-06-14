@@ -1,5 +1,5 @@
 <aside class="side">
-  <img class="avatar" src="{{ site.avatar | relative_url }}" alt="{{ site.author | escape }}">
+  <img class="avatar" src="{{ site.avatar | relative_url }}">
   <p><strong>{{ site.author }}</strong></p>
   <p>{{ site.description }}</p>
 
@@ -14,6 +14,8 @@
       </li>
     {%- endfor -%}
   </ul>
+
+  <strong>Contact</strong>
 
   <hr>
   {%- include header.html -%}

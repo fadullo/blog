@@ -11,25 +11,8 @@ My math and physics notes are somewhat selfish. Written for myself to improve my
 
 I plan to release these documents by the fall semester for anyone to use.
 
-## Courses
-### Mathematical Modelling
+## Course Documents to be Released
 
-This class focused mostly on using mathematical knowledge to complete computations and simulations in python.
-Constructing mathematical models to be more precise.
-
-### Advanced Classical Mechanics
-
-Classical Mechanics in my first year was okay, it was mostly stuff I did in high school. This class was a more
-advanced and theoretical version of classical mechanics. We covered the Lagrangian Mechanics and Hamiltonian Mechanics which was all very new to us.
-Considering, we only covered Newtonian Mechanics in first year. 
-
-It was really fun, but challenging, and I don't mean the word "theoretical" lightly, it was VERY theoretical.
-
-### Calculus I, II and III
-
-Pretty much crucial for any upper-year courses.
-
-### Linear Algebra
-
-Probably the most useful math class I took. Though 60% of the linear algebra I know comes from other classes that used linear algebra, but this class was still important in introducting it's methods and how it's applied.
-
+1. Calculus I, II, & III (MATH1000, MATH1010, MATH 2001)
+2. Linear Algebra (MATH1030)
+3. First-Year Physics (PHYC1190 & PHYC1290)

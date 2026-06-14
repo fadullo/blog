@@ -1,18 +1,20 @@
 .page-wrap {
   display: grid;
-  grid-template-columns: 220px minmax(0, 800px);
-  gap: 40px;
+  grid-template-columns: minmax(0, 640px);
   justify-content: center;
   align-items: flex-start;
 }
 
 .page-wrap.no-toc {
-  grid-template-columns: minmax(0, 800px);
+  grid-template-columns: minmax(0, 540px);
 }
 
 .toc {
-  position: sticky;
+  position: fixed;
+  font-size: 10pt;
   top: 80px;
+  left: 40px;
+  width: 200px;
 }
 
 .page {
@@ -35,13 +37,9 @@
   max-width: 100%;
 }
 
-@media (max-width: 768px) {
-  .page-wrap {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
+@media (max-width: 1100px) {
   .toc {
     position: static;
+    width: auto;
   }
 }
