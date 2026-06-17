@@ -11,15 +11,14 @@ exclude:
 social_links:
   - platform: github
     user_url: "https://github.com/fadullo"
-  - platform: tiktok
-    user_url: "https://www.tiktok.com/@jsfadullo"
+  # - platform: tiktok
+  #   user_url: "https://www.tiktok.com/@jsfadullo"
   # - platform: twitter
   #   user_url: "https://x.com/fadullotwt"
   - platform: instagram
     user_url: "https://instagram.com/jsfadullo"
   - platform: spotify
     user_url: "https://open.spotify.com/user/4wrnu63xlunbdovbv9m6toq0o"
-
 
 plugins:
   - jekyll-feed
