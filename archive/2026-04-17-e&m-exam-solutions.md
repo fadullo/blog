@@ -1,7 +1,7 @@
 ---
 layout: post
 title: E&M Final Exam Solutions
-author: Johnny
+author: fadullo
 comments: false
 toc: true
 math: true
@@ -12,7 +12,6 @@ In this post, I'd like to share my solutions to them. It may be helpful in your 
 
 Solutions may look different, but it's the correct answer. I just used a specific method, and may have
 simplified differently.
-
 
 ## Electric Displacement
 
