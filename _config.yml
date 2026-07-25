@@ -5,6 +5,7 @@ avatar: "./assets/images/lecture.jpg"
 url: "https://fadullo.ca"
 baseurl: ""
 
+
 exclude:
   - archive
 
