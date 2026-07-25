@@ -4,10 +4,13 @@ description: Currently doing a BSc Major in Physics combined with a D.Met (Diplo
 avatar: "./assets/images/lecture.jpg"
 url: "https://fadullo.ca"
 baseurl: ""
-
-
 exclude:
   - archive
+
+nav_pages:
+  - index.markdown
+  - writing.markdown
+  - portfolio.markdown
 
 social_links:
   - platform: github
@@ -21,6 +24,25 @@ social_links:
   # - platform: spotify
   #   user_url: "https://open.spotify.com/user/4wrnu63xlunbdovbv9m6toq0o"
 
+contact_links:
+  - type: email
+    label: "jsfadullo@dal.ca"
+    url: "mailto:jsfadullo@dal.ca"
+  - type: email
+    label: "jsfadullo@gmail.com"
+    url: "mailto:jsfadullo@gmail.com"
+
+  # - type: phone
+  #   label: "+1 902 000 0000"
+  #   url: "tel:+19020000000"
+
+portfolio_links:
+  - label: "Profile"
+    url: "https://www.roblox.com/users/926820216/profile"
+    icon: "gamepad"
+  - label: "DevForum"
+    url: "https://devforum.roblox.com/u/johnnynaynay/summary"
+    icon: "comments"
+
 plugins:
   - jekyll-feed
-

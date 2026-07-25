@@ -1,0 +1,24 @@
+{%- assign image_1_src = include.image_1 -%}
+{%- assign image_2_src = include.image_2 -%}
+{%- unless image_1_src contains "://" -%}
+  {%- assign image_1_src = image_1_src | relative_url -%}
+{%- endunless -%}
+{%- unless image_2_src contains "://" -%}
+  {%- assign image_2_src = image_2_src | relative_url -%}
+{%- endunless -%}
+
+<div class="portfolio-two-images">
+  <figure>
+    <img src="{{ image_1_src }}" alt="{{ include.alt_1 | default: '' | escape }}" loading="lazy">
+    {%- if include.caption_1 -%}
+      <figcaption>{{ include.caption_1 | escape }}</figcaption>
+    {%- endif -%}
+  </figure>
+
+  <figure>
+    <img src="{{ image_2_src }}" alt="{{ include.alt_2 | default: '' | escape }}" loading="lazy">
+    {%- if include.caption_2 -%}
+      <figcaption>{{ include.caption_2 | escape }}</figcaption>
+    {%- endif -%}
+  </figure>
+</div>

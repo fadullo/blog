@@ -9,6 +9,14 @@
   grid-template-columns: minmax(0, 540px);
 }
 
+.page-wrap.wide {
+  grid-template-columns: minmax(0, 840px);
+}
+
+.page-wrap.wide.no-toc {
+  grid-template-columns: minmax(0, 760px);
+}
+
 .toc {
   position: fixed;
   font-size: 10pt;

@@ -2,7 +2,7 @@
 layout: base
 ---
 
-<div class="page-wrap{% unless page.toc %} no-toc{% endunless %}">
+<div class="page-wrap{% unless page.toc %} no-toc{% endunless %}{% if page.wide %} wide{% endif %}">
   {% if page.toc %}
     <nav class="toc" aria-label="Table of contents">
       <strong>Contents</strong>

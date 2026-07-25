@@ -15,7 +15,33 @@
     {%- endfor -%}
   </ul>
 
-  <strong>Contact</strong>
+  {%- if site.contact_links -%}
+    <strong>Contact</strong>
+    <ul class="links contact-links">
+      {%- for contact in site.contact_links -%}
+        {%- assign contact_type = contact.type | default: "link" -%}
+        {%- assign contact_icon = contact.icon -%}
+        {%- if contact_icon == nil or contact_icon == "" -%}
+          {%- case contact_type -%}
+            {%- when "email" -%}
+              {%- assign contact_icon = "envelope" -%}
+            {%- when "phone" -%}
+              {%- assign contact_icon = "phone" -%}
+            {%- else -%}
+              {%- assign contact_icon = "address-card" -%}
+          {%- endcase -%}
+        {%- endif -%}
+        <li>
+          <a href="{{ contact.url }}">
+            <i class="fa-solid fa-{{ contact_icon }}" aria-hidden="true"></i>
+            {{ contact.label | escape }}
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
+  {%- include post_calendar.html -%}
 
   <hr>
   {%- include header.html -%}

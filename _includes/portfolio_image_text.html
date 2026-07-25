@@ -1,0 +1,22 @@
+{%- assign image_src = include.image -%}
+{%- unless image_src contains "://" -%}
+  {%- assign image_src = image_src | relative_url -%}
+{%- endunless -%}
+
+<section class="portfolio-image-text">
+  <figure>
+    <img src="{{ image_src }}" alt="{{ include.alt | default: '' | escape }}" loading="lazy">
+    {%- if include.caption -%}
+      <figcaption>{{ include.caption | escape }}</figcaption>
+    {%- endif -%}
+  </figure>
+
+  <div class="portfolio-copy">
+    {%- if include.title -%}
+      <h3>{{ include.title | escape }}</h3>
+    {%- endif -%}
+    {%- if include.text -%}
+      {{ include.text | markdownify }}
+    {%- endif -%}
+  </div>
+</section>

@@ -1,0 +1,45 @@
+<strong>Calendar</strong>
+
+{%- if site.posts.size > 0 -%}
+  {%- assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" -%}
+  <ul class="post-calendar">
+    {%- for year in posts_by_year -%}
+      <li>
+        <details open>
+          <summary>{{ year.name }}</summary>
+          {%- assign posts_by_month = year.items | group_by_exp: "post", "post.date | date: '%Y-%m'" -%}
+          <ul>
+            {%- for month in posts_by_month -%}
+              {%- assign first_month_post = month.items | first -%}
+              <li>
+                <details>
+                  <summary>{{ first_month_post.date | date: "%B" }}</summary>
+                  {%- assign posts_by_day = month.items | group_by_exp: "post", "post.date | date: '%Y-%m-%d'" -%}
+                  <ul>
+                    {%- for day in posts_by_day -%}
+                      {%- assign first_day_post = day.items | first -%}
+                      <li>
+                        <details>
+                          <summary>{{ first_day_post.date | date: "%b %-d" }}</summary>
+                          <ul>
+                            {%- for post in day.items -%}
+                              <li>
+                                <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                        </details>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </details>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </details>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- else -%}
+  <p class="empty-note">No dated posts yet.</p>
+{%- endif -%}
