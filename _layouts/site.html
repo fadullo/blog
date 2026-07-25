@@ -18,7 +18,7 @@ layout: base
       {% for post in posts %}
         <article class="post">
           <p class="date">{{ post.date | date: date_format }}</p>
-          <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
           <p>{{ post.content | strip_html | truncatewords: 100 }}</p>
           <a class="read" href="{{ post.url | relative_url }}">Read more</a>
         </article>

@@ -1,6 +1,6 @@
-{%- if site.portfolio_links -%}
-  <ul class="portfolio-links">
-    {%- for link in site.portfolio_links -%}
+{%- if site.projects_links -%}
+  <ul class="projects-links">
+    {%- for link in site.projects_links -%}
       {%- assign icon_style = link.icon_style | default: "fa-solid" -%}
       <li>
         <a href="{{ link.url | escape }}" target="_blank" rel="noopener">

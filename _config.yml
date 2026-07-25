@@ -4,13 +4,20 @@ description: Currently doing a BSc Major in Physics combined with a D.Met (Diplo
 avatar: "./assets/images/me.png"
 url: "https://fadullo.ca"
 baseurl: ""
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 exclude:
   - archive
 
 nav_pages:
   - index.markdown
   - writing.markdown
-  - portfolio.markdown
+  - projects.markdown
 
 social_links:
   - platform: github
@@ -36,10 +43,10 @@ contact_links:
   #   label: "+1 902 000 0000"
   #   url: "tel:+19020000000"
 
-portfolio_links:
-  - label: "Profile"
-    url: "https://www.roblox.com/users/926820216/profile"
-    icon: "gamepad"
+projects_links:
+  # - label: "Profile"
+  #   url: "https://www.roblox.com/users/926820216/profile"
+  #   icon: "gamepad"
   - label: "DevForum"
     url: "https://devforum.roblox.com/u/johnnynaynay/summary"
     icon: "comments"
