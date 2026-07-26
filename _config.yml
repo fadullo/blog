@@ -35,9 +35,9 @@ contact_links:
   - type: email
     label: "jsfadullo@dal.ca"
     url: "mailto:jsfadullo@dal.ca"
-  - type: email
-    label: "jsfadullo@gmail.com"
-    url: "mailto:jsfadullo@gmail.com"
+  # - type: email
+  #   label: "jsfadullo@gmail.com"
+  #   url: "mailto:jsfadullo@gmail.com"
 
   # - type: phone
   #   label: "+1 902 000 0000"
