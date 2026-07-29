@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Writing
+title: writing
 toc: true
 permalink: /writing/
 ---
